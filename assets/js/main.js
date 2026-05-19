@@ -37,9 +37,14 @@ if ('IntersectionObserver' in window && reveals.length) {
   reveals.forEach(el => el.classList.add('in'));
 }
 
-// Duplicate marquee content for seamless loop
-document.querySelectorAll('.marquee-track').forEach(track => {
-  track.innerHTML = track.innerHTML + track.innerHTML;
+// Theme toggle
+document.querySelectorAll('[data-theme-toggle]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const current = document.documentElement.getAttribute('data-theme') || 'dark';
+    const next = current === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+  });
 });
 
 // Smooth in-page anchor scroll

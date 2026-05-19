@@ -566,3 +566,171 @@ p + p { margin-top: 1rem; }
   .form-row { grid-template-columns: 1fr; }
   .brand-tag { display: none; }
 }
+
+/* ==========================================================================
+   LIGHT THEME — warm paper, deepened coral, soft shadows
+   ========================================================================== */
+
+[data-theme="light"] {
+  --bg:           #F6F5F0;
+  --bg-2:         #EFEEE8;
+  --surface:      #FFFFFF;
+  --surface-2:    #FAF9F4;
+  --line:         rgba(20, 18, 14, 0.09);
+  --line-2:       rgba(20, 18, 14, 0.16);
+  --line-strong:  rgba(20, 18, 14, 0.28);
+
+  --ink:          #14120E;
+  --ink-2:        rgba(20, 18, 14, 0.70);
+  --ink-3:        rgba(20, 18, 14, 0.48);
+  --ink-4:        rgba(20, 18, 14, 0.30);
+
+  --coral:        #D9482A;
+  --coral-deep:   #BF3C20;
+  --coral-glow:   rgba(217, 72, 42, 0.22);
+  --coral-soft:   rgba(217, 72, 42, 0.06);
+
+  --gradient-warm: linear-gradient(135deg, #D9482A 0%, #E87355 50%, #F4A988 100%);
+}
+
+[data-theme="light"] body::before {
+  background-image: radial-gradient(circle at 1px 1px, rgba(20, 18, 14, 0.08) 1px, transparent 0);
+  mask-image: linear-gradient(to bottom, black 0%, black 70%, transparent 100%);
+}
+[data-theme="light"] body::after {
+  opacity: 0.35;
+  filter: blur(90px);
+}
+
+[data-theme="light"] ::selection { background: var(--coral); color: #FFFFFF; }
+
+/* Nav */
+[data-theme="light"] .nav { background: rgba(246, 245, 240, 0.7); }
+[data-theme="light"] .nav.scrolled { background: rgba(246, 245, 240, 0.92); border-bottom-color: var(--line); }
+[data-theme="light"] .nav-links a:hover { background: rgba(20, 18, 14, 0.05); }
+[data-theme="light"] .nav-links a.active { background: rgba(20, 18, 14, 0.07); }
+[data-theme="light"] .nav-cta { background: var(--ink); color: #FFFFFF; }
+[data-theme="light"] .nav-cta:hover { background: var(--coral); color: #FFFFFF; box-shadow: 0 8px 28px var(--coral-glow); }
+
+/* Buttons */
+[data-theme="light"] .btn-primary { background: var(--ink); color: #FFFFFF; }
+[data-theme="light"] .btn-primary:hover { background: var(--coral); color: #FFFFFF; box-shadow: 0 10px 32px var(--coral-glow); }
+[data-theme="light"] .btn-ghost { background: rgba(20, 18, 14, 0.04); border-color: var(--line); }
+[data-theme="light"] .btn-ghost:hover { background: rgba(20, 18, 14, 0.07); border-color: var(--line-2); }
+
+/* Tag */
+[data-theme="light"] .tag { background: rgba(255, 255, 255, 0.6); }
+
+/* Cards */
+[data-theme="light"] .card {
+  background: #FFFFFF;
+  box-shadow: 0 1px 0 rgba(20, 18, 14, 0.02), 0 8px 24px -16px rgba(20, 18, 14, 0.08);
+}
+[data-theme="light"] .card::before { background: linear-gradient(90deg, transparent, rgba(20, 18, 14, 0.10), transparent); }
+[data-theme="light"] .card:hover { background: #FFFFFF; box-shadow: 0 1px 0 rgba(20, 18, 14, 0.02), 0 14px 40px -18px rgba(20, 18, 14, 0.16); }
+[data-theme="light"] .card-icon { background: rgba(217, 72, 42, 0.07); border-color: rgba(217, 72, 42, 0.20); }
+
+/* Tall card visual */
+[data-theme="light"] .card.tall .visual {
+  background:
+    radial-gradient(circle at 30% 20%, rgba(217, 72, 42, 0.14), transparent 55%),
+    linear-gradient(180deg, var(--surface-2), #F1EFE8);
+  border-color: var(--line);
+}
+[data-theme="light"] .card.tall .visual::after {
+  background-image: radial-gradient(circle at 1px 1px, rgba(20, 18, 14, 0.08) 1px, transparent 0);
+  opacity: 0.7;
+}
+
+/* Work cards */
+[data-theme="light"] .work-card {
+  background: #FFFFFF;
+  box-shadow: 0 1px 0 rgba(20, 18, 14, 0.02), 0 10px 32px -18px rgba(20, 18, 14, 0.10);
+}
+[data-theme="light"] .work-card:hover { box-shadow: 0 1px 0 rgba(20, 18, 14, 0.02), 0 18px 50px -20px rgba(20, 18, 14, 0.18); }
+[data-theme="light"] .work-visual {
+  background:
+    radial-gradient(circle at 25% 30%, rgba(217, 72, 42, 0.14), transparent 55%),
+    radial-gradient(circle at 75% 70%, rgba(232, 115, 85, 0.08), transparent 55%),
+    linear-gradient(180deg, var(--surface-2), #F1EFE8);
+  border-bottom-color: var(--line);
+}
+[data-theme="light"] .work-visual::before {
+  background-image: linear-gradient(rgba(20, 18, 14, 0.05) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(20, 18, 14, 0.05) 1px, transparent 1px);
+}
+[data-theme="light"] .work-status { background: rgba(255, 255, 255, 0.75); }
+
+/* Index list */
+[data-theme="light"] .idx-row:hover { background: rgba(20, 18, 14, 0.025); }
+
+/* Quote */
+[data-theme="light"] .quote-block { background: radial-gradient(ellipse at 50% 100%, var(--coral-soft), transparent 60%); }
+
+/* Principles */
+[data-theme="light"] .principle-card {
+  background: #FFFFFF;
+  box-shadow: 0 1px 0 rgba(20, 18, 14, 0.02), 0 8px 24px -18px rgba(20, 18, 14, 0.08);
+}
+[data-theme="light"] .principle-card:hover { background: #FFFFFF; box-shadow: 0 1px 0 rgba(20, 18, 14, 0.02), 0 14px 36px -18px rgba(20, 18, 14, 0.14); }
+
+/* Timeline */
+[data-theme="light"] .timeline-step { background: #FFFFFF; box-shadow: 0 1px 0 rgba(20, 18, 14, 0.02), 0 6px 18px -14px rgba(20, 18, 14, 0.08); }
+
+/* Breadcrumb */
+[data-theme="light"] .breadcrumb { background: rgba(255, 255, 255, 0.6); }
+
+/* Service detail */
+[data-theme="light"] .svc-detail .svc-aside { background: #FFFFFF; box-shadow: 0 1px 0 rgba(20, 18, 14, 0.02), 0 6px 18px -14px rgba(20, 18, 14, 0.08); }
+
+/* CTA */
+[data-theme="light"] .cta-card {
+  background:
+    radial-gradient(circle at 80% 20%, rgba(217, 72, 42, 0.16), transparent 50%),
+    linear-gradient(180deg, #FFFFFF, var(--surface-2));
+  box-shadow: 0 1px 0 rgba(20, 18, 14, 0.02), 0 24px 60px -28px rgba(20, 18, 14, 0.18);
+}
+[data-theme="light"] .cta-card::before { background: linear-gradient(90deg, transparent, rgba(217, 72, 42, 0.5), transparent); }
+[data-theme="light"] .cta-card::after { background-image: radial-gradient(circle at 1px 1px, rgba(20, 18, 14, 0.06) 1px, transparent 0); }
+
+/* Form */
+[data-theme="light"] .form-card { background: #FFFFFF; box-shadow: 0 1px 0 rgba(20, 18, 14, 0.02), 0 12px 36px -18px rgba(20, 18, 14, 0.12); }
+[data-theme="light"] .form-card::before { background: linear-gradient(90deg, transparent, rgba(20, 18, 14, 0.10), transparent); }
+[data-theme="light"] .field input,
+[data-theme="light"] .field textarea,
+[data-theme="light"] .field select { background: var(--bg-2); border-color: var(--line); }
+[data-theme="light"] .field input:focus,
+[data-theme="light"] .field textarea:focus,
+[data-theme="light"] .field select:focus { background: #FFFFFF; border-color: var(--coral); box-shadow: 0 0 0 3px var(--coral-soft); }
+[data-theme="light"] .field select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23666' d='M6 8L0 0h12z'/%3E%3C/svg%3E"); }
+
+/* Footer */
+[data-theme="light"] .footer { background: linear-gradient(180deg, transparent, rgba(20, 18, 14, 0.04)); }
+[data-theme="light"] .footer-bottom .status .dot { background: #16A34A; box-shadow: 0 0 10px rgba(22, 163, 74, 0.45); }
+
+/* ==========================================================================
+   THEME TOGGLE
+   ========================================================================== */
+
+.theme-toggle {
+  width: 36px; height: 36px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--line);
+  display: inline-flex; align-items: center; justify-content: center;
+  color: var(--ink-2);
+  transition: all 0.25s ease;
+  position: relative; flex-shrink: 0;
+}
+.theme-toggle:hover { background: rgba(255, 255, 255, 0.08); color: var(--ink); border-color: var(--line-2); }
+.theme-toggle svg { width: 16px; height: 16px; transition: opacity 0.25s, transform 0.4s cubic-bezier(.4,1.4,.5,1); position: absolute; }
+.theme-toggle .ic-sun { opacity: 0; transform: rotate(-90deg) scale(0.6); }
+.theme-toggle .ic-moon { opacity: 1; transform: rotate(0) scale(1); }
+[data-theme="light"] .theme-toggle { background: rgba(20, 18, 14, 0.04); }
+[data-theme="light"] .theme-toggle:hover { background: rgba(20, 18, 14, 0.08); }
+[data-theme="light"] .theme-toggle .ic-sun { opacity: 1; transform: rotate(0) scale(1); }
+[data-theme="light"] .theme-toggle .ic-moon { opacity: 0; transform: rotate(90deg) scale(0.6); }
+
+@media (max-width: 800px) {
+  .theme-toggle { width: 34px; height: 34px; }
+}
