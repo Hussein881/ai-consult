@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | AI Systems Consulting</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+    <p>Start your AI automation journey today</p>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <main>
+    <section>
+      <h2>Get in Touch</h2>
+      <p>Ready to automate your engineering workflows, or want to learn more about our services? Fill out the form below or email us at <a href="mailto:info@aisystemsconsulting.com">info@aisystemsconsulting.com</a>.</p>
+      <form style="max-width:500px; margin-top:2rem;" name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required style="width:100%;padding:0.5rem;margin-bottom:1rem;"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required style="width:100%;padding:0.5rem;margin-bottom:1rem;"><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required style="width:100%;padding:0.5rem;margin-bottom:1rem;"></textarea><br>
+        <button type="submit" style="background:#3b82f6;color:#fff;padding:0.7rem 2rem;border:none;border-radius:4px;font-size:1.1rem;">Send</button>
+      </form>
+    </section>
+    <section class="cta">
+      <p>Prefer email? Reach us at <a href="mailto:info@aisystemsconsulting.com">info@aisystemsconsulting.com</a></p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2026 AI Systems Consulting &mdash; Practical AI for Engineering Teams
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
