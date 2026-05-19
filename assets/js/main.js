@@ -1,61 +1,54 @@
-// AI Systems Consulting - Main JS
+// AI Systems Consulting — Editorial interactions
 
-document.addEventListener('DOMContentLoaded', function () {
+// Nav: add border on scroll
+const nav = document.querySelector('.nav');
+if (nav) {
+  const onScroll = () => {
+    if (window.scrollY > 8) nav.classList.add('scrolled');
+    else nav.classList.remove('scrolled');
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+}
 
-  // Smooth scroll for anchor links
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth' });
+// Active nav link
+const navLinks = document.querySelectorAll('.nav-links a[href]');
+const currentPath = location.pathname.split('/').pop() || 'index.html';
+navLinks.forEach(a => {
+  const href = a.getAttribute('href');
+  if (href === currentPath || (currentPath === '' && href === 'index.html')) {
+    a.classList.add('active');
+  }
+});
+
+// Reveal on scroll
+const reveals = document.querySelectorAll('.reveal');
+if ('IntersectionObserver' in window && reveals.length) {
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
       }
     });
-  });
+  }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+  reveals.forEach(el => io.observe(el));
+} else {
+  reveals.forEach(el => el.classList.add('in'));
+}
 
-  // Highlight active nav link
-  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('.navbar-links a').forEach(link => {
-    const href = link.getAttribute('href');
-    if (href === currentPage) {
-      link.classList.add('active');
+// Duplicate marquee content for seamless loop
+document.querySelectorAll('.marquee-track').forEach(track => {
+  track.innerHTML = track.innerHTML + track.innerHTML;
+});
+
+// Smooth in-page anchor scroll
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const id = a.getAttribute('href');
+    if (id.length > 1) {
+      const target = document.querySelector(id);
+      if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
     }
   });
-
-  // Animate cards on scroll (fade-in from below)
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0)';
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1 });
-
-  document.querySelectorAll('.card, .service-card, .project-list-item').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(24px)';
-    el.style.transition = 'opacity 0.45s ease, transform 0.45s ease';
-    observer.observe(el);
-  });
-
-  // Animate stat numbers on scroll
-  const statObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0)';
-        statObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.2 });
-
-  document.querySelectorAll('.stat').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(16px)';
-    el.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
-    statObserver.observe(el);
-  });
-
 });
