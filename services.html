@@ -4,75 +4,131 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services | AI Systems Consulting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <header>
-    <h1>Consulting Services</h1>
-    <p>AI workflow automation for engineering and operations teams</p>
-  </header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
+
+  <nav class="navbar">
+    <a class="navbar-brand" href="index.html">&#x2BC1; <span>AI Systems</span> Consulting</a>
+    <ul class="navbar-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html" class="navbar-cta">Contact Us</a></li>
+    </ul>
   </nav>
-  <main>
-    <section>
-      <h2>Our Services</h2>
-      <div class="project-list">
-        <div class="project-card">
-          <h3>AI Workflow Opportunity Audit</h3>
-          <p><strong>Description:</strong> Identify high-impact opportunities for AI automation in your engineering and operations workflows.</p>
-          <p><strong>Business Problem:</strong> Manual, repetitive work slows down teams and increases error rates.</p>
-          <p><strong>Example Outcome:</strong> Roadmap of prioritized AI automation opportunities with estimated ROI.</p>
-        </div>
-        <div class="project-card">
-          <h3>Log & Test Failure Analysis Assistants</h3>
-          <p><strong>Description:</strong> AI-powered assistants for log analysis, anomaly detection, and test failure triage.</p>
-          <p><strong>Business Problem:</strong> Debugging and root cause analysis are time-consuming and error-prone.</p>
-          <p><strong>Example Outcome:</strong> Reduced incident response time and faster release cycles.</p>
-        </div>
-        <div class="project-card">
-          <h3>Internal Knowledge Assistants</h3>
-          <p><strong>Description:</strong> Retrieval-augmented AI assistants for internal documentation and onboarding.</p>
-          <p><strong>Business Problem:</strong> Institutional knowledge is hard to access and share.</p>
-          <p><strong>Example Outcome:</strong> Faster onboarding and improved knowledge retention.</p>
-        </div>
-        <div class="project-card">
-          <h3>AI Documentation Automation</h3>
-          <p><strong>Description:</strong> Automated generation and updating of technical documentation using AI.</p>
-          <p><strong>Business Problem:</strong> Documentation is often outdated or incomplete.</p>
-          <p><strong>Example Outcome:</strong> Up-to-date, high-quality documentation with less manual effort.</p>
-        </div>
-        <div class="project-card">
-          <h3>Support Ticket Triage Automation</h3>
-          <p><strong>Description:</strong> AI-driven triage and routing of support tickets to the right teams.</p>
-          <p><strong>Business Problem:</strong> Manual ticket triage delays resolution and increases support costs.</p>
-          <p><strong>Example Outcome:</strong> Faster ticket resolution and improved customer satisfaction.</p>
-        </div>
-        <div class="project-card">
-          <h3>AI Operations Reporting</h3>
-          <p><strong>Description:</strong> Automated reporting and dashboarding for operations and engineering metrics.</p>
-          <p><strong>Business Problem:</strong> Manual reporting is slow and error-prone.</p>
-          <p><strong>Example Outcome:</strong> Real-time, accurate reporting with less manual work.</p>
-        </div>
-        <div class="project-card">
-          <h3>Custom AI Workflow Automation</h3>
-          <p><strong>Description:</strong> Bespoke AI automation solutions tailored to your unique business needs.</p>
-          <p><strong>Business Problem:</strong> Off-the-shelf tools don’t fit complex, unique workflows.</p>
-          <p><strong>Example Outcome:</strong> Custom AI solutions that deliver measurable business value.</p>
+
+  <div class="page-hero">
+    <div class="hero-badge">Services</div>
+    <h1>What We Build For You</h1>
+    <p>Practical AI automation services for engineering, DevOps, support, and operations teams.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">Our Service Offerings</h2>
+      <div class="accent-line"></div>
+      <p class="section-subtitle">Each service is scoped, delivered, and documented by engineers with real production experience.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-icon">&#x1F52D;</div>
+        <h3>AI Workflow Opportunity Audit</h3>
+        <p style="color:var(--text2); font-size:0.95rem;">Identify your highest-impact AI automation opportunities with a structured audit of your current engineering and operations workflows.</p>
+        <div class="service-meta">
+          <p><strong>Problem Solved:</strong> <span style="color:var(--text2);">Manual, repetitive work slows teams and raises error rates.</span></p>
+          <p style="margin-top:0.4rem;"><strong>Example Outcome:</strong> <span style="color:var(--text2);">Prioritized AI automation roadmap with estimated time savings per opportunity.</span></p>
         </div>
       </div>
-    </section>
-    <section class="cta">
-      <p>Curious how AI can automate your workflows? <a href="contact.html">Request a free consultation &rarr;</a></p>
-    </section>
-  </main>
+
+      <div class="service-card">
+        <div class="service-icon">&#x1F50D;</div>
+        <h3>Log &amp; Test Failure Analysis</h3>
+        <p style="color:var(--text2); font-size:0.95rem;">AI assistants for log analysis, anomaly detection, test failure triage, and root cause identification &mdash; built for your specific stack.</p>
+        <div class="service-meta">
+          <p><strong>Problem Solved:</strong> <span style="color:var(--text2);">Debugging and root cause analysis eat hours of engineering time.</span></p>
+          <p style="margin-top:0.4rem;"><strong>Example Outcome:</strong> <span style="color:var(--text2);">Incident response time reduced by 60%, release cycles accelerated.</span></p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">&#x1F9E0;</div>
+        <h3>Internal Knowledge Assistants</h3>
+        <p style="color:var(--text2); font-size:0.95rem;">RAG-powered AI assistants that answer questions from your internal docs, wikis, GitHub repos, and onboarding materials.</p>
+        <div class="service-meta">
+          <p><strong>Problem Solved:</strong> <span style="color:var(--text2);">Engineers waste time searching for information or interrupting senior staff.</span></p>
+          <p style="margin-top:0.4rem;"><strong>Example Outcome:</strong> <span style="color:var(--text2);">Onboarding time cut in half, senior engineer interruptions reduced by 40%.</span></p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">&#x1F4DD;</div>
+        <h3>AI Documentation Automation</h3>
+        <p style="color:var(--text2); font-size:0.95rem;">Automatically generate and maintain technical documentation from code, configurations, and logs.</p>
+        <div class="service-meta">
+          <p><strong>Problem Solved:</strong> <span style="color:var(--text2);">Docs are perpetually stale, incomplete, or missing entirely.</span></p>
+          <p style="margin-top:0.4rem;"><strong>Example Outcome:</strong> <span style="color:var(--text2);">Up-to-date documentation with 80% less manual writing effort.</span></p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">&#x1F3AB;</div>
+        <h3>Support Ticket Triage Automation</h3>
+        <p style="color:var(--text2); font-size:0.95rem;">AI-driven classification and routing of support tickets, escalations, and customer requests.</p>
+        <div class="service-meta">
+          <p><strong>Problem Solved:</strong> <span style="color:var(--text2);">Manual ticket triage delays resolution and increases support cost.</span></p>
+          <p style="margin-top:0.4rem;"><strong>Example Outcome:</strong> <span style="color:var(--text2);">Ticket resolution time reduced by 45%, CSAT scores improved.</span></p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">&#x1F4CA;</div>
+        <h3>AI Operations Reporting</h3>
+        <p style="color:var(--text2); font-size:0.95rem;">Automated reporting and dashboarding for engineering and operations metrics with AI-generated summaries.</p>
+        <div class="service-meta">
+          <p><strong>Problem Solved:</strong> <span style="color:var(--text2);">Manual reporting is slow, error-prone, and nobody reads it anyway.</span></p>
+          <p style="margin-top:0.4rem;"><strong>Example Outcome:</strong> <span style="color:var(--text2);">Real-time reporting pipeline with 90% reduction in manual effort.</span></p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">&#x2699;&#xFE0F;</div>
+        <h3>Custom AI Workflow Automation</h3>
+        <p style="color:var(--text2); font-size:0.95rem;">Bespoke AI automation solutions tailored to your unique workflows, systems, and business constraints.</p>
+        <div class="service-meta">
+          <p><strong>Problem Solved:</strong> <span style="color:var(--text2);">Off-the-shelf tools don't fit complex, unique workflows.</span></p>
+          <p style="margin-top:0.4rem;"><strong>Example Outcome:</strong> <span style="color:var(--text2);">Custom AI pipeline delivering measurable, sustained business value.</span></p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="cta-section" style="margin-top:4rem;">
+      <h2>Not sure which service fits?</h2>
+      <p>Book a free consultation and we'll walk through your workflows together to find the highest-value opportunities.</p>
+      <a href="contact.html" class="btn btn-primary">Book a Free Consultation &#x2192;</a>
+    </div>
+  </div>
+
   <footer>
-    &copy; 2026 AI Systems Consulting &mdash; Practical AI for Engineering Teams
+    <div class="footer-inner">
+      <div class="footer-brand">&#x2BC1; <span>AI Systems</span> Consulting</div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-copy">&copy; 2026 AI Systems Consulting. Practical AI for Engineering Teams.</div>
   </footer>
+
   <script src="assets/js/main.js"></script>
 </body>
 </html>

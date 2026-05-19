@@ -4,69 +4,170 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Systems Consulting | Practical AI Automation for Engineering Teams</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <header>
-    <h1>AI Systems Consulting</h1>
-    <p>Practical AI workflow automation for engineering and operations teams</p>
-  </header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a class="navbar-brand" href="index.html">⬡ <span>AI Systems</span> Consulting</a>
+    <ul class="navbar-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html" class="navbar-cta">Contact Us</a></li>
+    </ul>
   </nav>
-  <main>
-    <section>
-      <h2>Engineer-Led AI Consulting for Real Business Outcomes</h2>
-      <p>
-        We help engineering and operations teams use AI to reduce manual work, accelerate debugging, improve documentation, automate reporting, and build practical internal AI assistants. <br>
-        <strong>We are not a generic AI agency.</strong> We are engineers focused on practical implementation, systems thinking, and measurable business value.
-      </p>
-    </section>
-    <section>
-      <h2>What We Do</h2>
-      <ul>
-        <li>AI workflow opportunity audits</li>
-        <li>Log and test failure analysis assistants</li>
-        <li>Internal knowledge assistants</li>
-        <li>AI documentation automation</li>
-        <li>Support ticket triage automation</li>
-        <li>AI operations reporting</li>
-        <li>Custom AI workflow automation</li>
-      </ul>
-    </section>
-    <section class="cta">
-      <p>Ready to automate your engineering workflows with AI? <a href="contact.html">Contact us for a consultation &rarr;</a></p>
-    </section>
-    <section>
-      <h2>Featured Project Portfolio</h2>
-      <div class="project-list">
-        <div class="project-card">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-badge">🤖 Engineer-Led AI Consulting</div>
+    <h1>
+      AI Automation That<br>
+      <span class="gradient-text">Actually Ships</span>
+    </h1>
+    <p>We help engineering and operations teams cut manual work, accelerate debugging, and build practical AI systems that deliver measurable business value.</p>
+    <div class="hero-actions">
+      <a href="contact.html" class="btn btn-primary">Book a Consultation →</a>
+      <a href="projects.html" class="btn btn-secondary">View Portfolio</a>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="stat">
+      <div class="stat-number">15+</div>
+      <div class="stat-label">AI Projects Delivered</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">7</div>
+      <div class="stat-label">Service Offerings</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">60%</div>
+      <div class="stat-label">Avg. Workflow Time Saved</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">100%</div>
+      <div class="stat-label">Engineer-Led Delivery</div>
+    </div>
+  </div>
+
+  <!-- WHAT WE DO -->
+  <div class="section">
+    <div class="section-header">
+      <div class="hero-badge" style="margin-bottom:0.8rem;">Our Expertise</div>
+      <h2 class="section-title">AI automation for every layer of your stack</h2>
+      <div class="accent-line"></div>
+      <p class="section-subtitle">From log analysis to documentation, we automate the workflows that slow your teams down.</p>
+    </div>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon">🔍</div>
+        <div class="card-tag">Observability</div>
+        <h3>Log & Incident Analysis</h3>
+        <p>AI-powered assistants that parse logs, surface anomalies, and suggest root causes — reducing debugging time from hours to minutes.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🧪</div>
+        <div class="card-tag">Quality</div>
+        <h3>Test Failure Intelligence</h3>
+        <p>Automated test triage, flaky test detection, and release risk scoring — so your engineers spend less time chasing failures.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🧠</div>
+        <div class="card-tag">Knowledge</div>
+        <h3>Internal AI Assistants</h3>
+        <p>RAG-powered knowledge assistants that surface answers from your own docs, wikis, and repositories — cutting onboarding time in half.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📝</div>
+        <div class="card-tag">Documentation</div>
+        <h3>AI Documentation Generator</h3>
+        <p>Automatically generate and update technical docs from code, configs, and logs. No more stale READMEs or missing setup guides.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🎫</div>
+        <div class="card-tag">Support</div>
+        <h3>Ticket Triage Automation</h3>
+        <p>Intelligent support ticket routing and classification that reduces manual triage and speeds resolution across your teams.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📊</div>
+        <div class="card-tag">Reporting</div>
+        <h3>AI Ops Reporting</h3>
+        <p>Real-time, automated operational reporting with AI-generated summaries — replacing hours of manual dashboarding work.</p>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:2.5rem;">
+      <a href="services.html" class="btn btn-secondary">See All Services →</a>
+    </div>
+  </div>
+
+  <!-- FEATURED PROJECTS -->
+  <div style="background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 1rem 0;">
+    <div class="section">
+      <div class="section-header">
+        <div class="hero-badge" style="margin-bottom:0.8rem;">Portfolio</div>
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="accent-line"></div>
+        <p class="section-subtitle">Real-world AI automation built for engineering teams.</p>
+      </div>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-tag">Observability</div>
           <h3><a href="projects/ai-log-analysis-root-cause-assistant.html">AI Log Analysis & Root Cause Assistant</a></h3>
-          <p>AI-powered assistant for log analysis, anomaly detection, and root cause identification. Reduces debugging time and accelerates incident response.</p>
+          <p>Ingest logs, detect anomalies, identify root causes, and generate structured incident reports — all powered by AI.</p>
         </div>
-        <div class="project-card">
+        <div class="card">
+          <div class="card-tag">Quality Engineering</div>
           <h3><a href="projects/ai-test-failure-analysis-assistant.html">AI Test Failure Analysis Assistant</a></h3>
-          <p>Automates test result analysis, flaky test detection, and release risk assessment. Speeds up release cycles and improves software quality.</p>
+          <p>Automatically triage test failures, detect flaky tests, and generate release readiness summaries from CI/CD output.</p>
         </div>
-        <div class="project-card">
+        <div class="card">
+          <div class="card-tag">Knowledge Management</div>
           <h3><a href="projects/internal-engineering-knowledge-assistant.html">Internal Engineering Knowledge Assistant</a></h3>
-          <p>Retrieval-augmented AI assistant for internal documentation, onboarding, and knowledge sharing. Reduces onboarding time and preserves institutional knowledge.</p>
+          <p>A RAG-powered assistant for internal docs, onboarding, and knowledge sharing that gives instant, grounded answers.</p>
         </div>
-        <div class="project-card">
+        <div class="card">
+          <div class="card-tag">Developer Tooling</div>
           <h3><a href="projects/ai-technical-documentation-generator.html">AI Technical Documentation Generator</a></h3>
-          <p>Generates and updates technical documentation from code, configs, and logs. Improves documentation quality and reduces support burden.</p>
+          <p>Generate READMEs, setup guides, and architecture summaries from code and configs using AI.</p>
         </div>
       </div>
-      <p style="text-align:right; margin-top:1rem;"><a href="projects.html">View all projects &rarr;</a></p>
-    </section>
-  </main>
+      <div style="text-align:center; margin-top:2.5rem;">
+        <a href="projects.html" class="btn btn-secondary">View All 15 Projects →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="section">
+    <div class="cta-section">
+      <h2>Ready to automate your engineering workflows?</h2>
+      <p>Book a free 30-minute consultation and we'll identify your highest-value AI automation opportunities.</p>
+      <a href="contact.html" class="btn btn-primary">Book a Free Consultation →</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
   <footer>
-    &copy; 2026 AI Systems Consulting &mdash; Practical AI for Engineering Teams
+    <div class="footer-inner">
+      <div class="footer-brand">⬡ <span>AI Systems</span> Consulting</div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-copy">&copy; 2026 AI Systems Consulting. Practical AI for Engineering Teams.</div>
   </footer>
+
   <script src="assets/js/main.js"></script>
 </body>
 </html>

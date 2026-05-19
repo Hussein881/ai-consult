@@ -4,42 +4,125 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | AI Systems Consulting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <header>
-    <h1>Contact Us</h1>
-    <p>Start your AI automation journey today</p>
-  </header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
+
+  <nav class="navbar">
+    <a class="navbar-brand" href="index.html">&#x2BC1; <span>AI Systems</span> Consulting</a>
+    <ul class="navbar-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html" class="active navbar-cta">Contact Us</a></li>
+    </ul>
   </nav>
-  <main>
-    <section>
-      <h2>Get in Touch</h2>
-      <p>Ready to automate your engineering workflows, or want to learn more about our services? Fill out the form below or email us at <a href="mailto:info@aisystemsconsulting.com">info@aisystemsconsulting.com</a>.</p>
-      <form style="max-width:500px; margin-top:2rem;" name="contact" method="POST" data-netlify="true">
-        <input type="hidden" name="form-name" value="contact">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required style="width:100%;padding:0.5rem;margin-bottom:1rem;"><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required style="width:100%;padding:0.5rem;margin-bottom:1rem;"><br>
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="5" required style="width:100%;padding:0.5rem;margin-bottom:1rem;"></textarea><br>
-        <button type="submit" style="background:#3b82f6;color:#fff;padding:0.7rem 2rem;border:none;border-radius:4px;font-size:1.1rem;">Send</button>
-      </form>
-    </section>
-    <section class="cta">
-      <p>Prefer email? Reach us at <a href="mailto:info@aisystemsconsulting.com">info@aisystemsconsulting.com</a></p>
-    </section>
-  </main>
+
+  <div class="page-hero">
+    <div class="hero-badge">Contact</div>
+    <h1>Let's Work Together</h1>
+    <p>Tell us about your workflows and we'll show you where AI can deliver real value.</p>
+  </div>
+
+  <div class="section">
+    <div class="contact-grid">
+
+      <div class="contact-info">
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="accent-line"></div>
+        <p style="color:var(--text2); margin-bottom:2rem;">Whether you want to discuss a specific project, explore a consulting engagement, or just get a second opinion on an AI initiative &mdash; we're happy to talk.</p>
+
+        <div class="contact-item">
+          <span class="contact-icon">&#x1F4E7;</span>
+          <div>
+            <strong style="color:var(--white); display:block; margin-bottom:0.1rem;">Email</strong>
+            <a href="mailto:info@aisystemsconsulting.com" style="color:var(--accent2); text-decoration:none;">info@aisystemsconsulting.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">&#x1F4C5;</span>
+          <div>
+            <strong style="color:var(--white); display:block; margin-bottom:0.1rem;">Availability</strong>
+            <span>Free 30-min consultations available</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">&#x1F30D;</span>
+          <div>
+            <strong style="color:var(--white); display:block; margin-bottom:0.1rem;">Location</strong>
+            <span>Remote &mdash; serving teams globally</span>
+          </div>
+        </div>
+
+        <div style="margin-top:2rem; padding:1.5rem; background:var(--card); border:1px solid var(--border); border-radius:var(--radius);">
+          <p style="color:var(--accent3); font-weight:700; margin-bottom:0.5rem;">&#x26A1; Typical Response Time</p>
+          <p style="color:var(--text2); font-size:0.95rem;">We respond to all inquiries within 1 business day.</p>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <form name="contact" method="POST" action="#" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact">
+
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Work Email</label>
+            <input type="email" id="email" name="email" placeholder="jane@company.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" placeholder="Acme Corp">
+          </div>
+
+          <div class="form-group">
+            <label for="service">Service Interest</label>
+            <select id="service" name="service">
+              <option value="">Select a service...</option>
+              <option>AI Workflow Opportunity Audit</option>
+              <option>Log &amp; Test Failure Analysis</option>
+              <option>Internal Knowledge Assistant</option>
+              <option>AI Documentation Automation</option>
+              <option>Support Ticket Triage Automation</option>
+              <option>AI Operations Reporting</option>
+              <option>Custom AI Workflow Automation</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Tell us about your workflow challenge</label>
+            <textarea id="message" name="message" placeholder="Describe the problem you're trying to solve, or the workflow you want to automate..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit">Send Message &#x2192;</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
   <footer>
-    &copy; 2026 AI Systems Consulting &mdash; Practical AI for Engineering Teams
+    <div class="footer-inner">
+      <div class="footer-brand">&#x2BC1; <span>AI Systems</span> Consulting</div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-copy">&copy; 2026 AI Systems Consulting. Practical AI for Engineering Teams.</div>
   </footer>
+
   <script src="assets/js/main.js"></script>
 </body>
 </html>

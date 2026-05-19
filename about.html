@@ -4,52 +4,104 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About | AI Systems Consulting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <header>
-    <h1>About AI Systems Consulting</h1>
-    <p>Engineer-led, outcome-focused AI consulting for technical teams</p>
-  </header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
+
+  <nav class="navbar">
+    <a class="navbar-brand" href="index.html">⬡ <span>AI Systems</span> Consulting</a>
+    <ul class="navbar-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html" class="navbar-cta">Contact Us</a></li>
+    </ul>
   </nav>
-  <main>
-    <section>
-      <h2>Who We Are</h2>
-      <p>
-        AI Systems Consulting is a boutique firm founded by engineers for engineers. We specialize in practical, systems-oriented AI solutions that deliver measurable business value for software, DevOps, and operations teams.
-      </p>
-    </section>
-    <section>
-      <h2>Our Approach</h2>
-      <ul>
-        <li><strong>Engineer-Led:</strong> We are practitioners, not just consultants. We understand the realities of production systems and technical debt.</li>
-        <li><strong>Outcome-Focused:</strong> Every engagement is measured by business impact, not just technical novelty.</li>
-        <li><strong>Practical AI:</strong> We use proven AI/ML techniques, automation, and workflow design to solve real problems.</li>
-        <li><strong>Transparency:</strong> We document, explain, and transfer knowledge to your team.</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Why Choose Us?</h2>
-      <ul>
-        <li>Deep experience in software engineering, DevOps, and AI/ML</li>
-        <li>Track record of successful AI workflow automation projects</li>
-        <li>Focus on maintainability, security, and long-term value</li>
-        <li>Clear communication and collaborative delivery</li>
-      </ul>
-    </section>
-    <section class="cta">
-      <p>Want to learn more about our team or approach? <a href="contact.html">Contact us &rarr;</a></p>
-    </section>
-  </main>
+
+  <div class="page-hero">
+    <div class="hero-badge">About Us</div>
+    <h1>Engineer-Led.<br>Outcome-Focused.</h1>
+    <p>We are practitioners who build AI systems that solve real problems for technical teams.</p>
+  </div>
+
+  <div class="section">
+    <div class="about-grid">
+      <div>
+        <h2 class="section-title">Who We Are</h2>
+        <div class="accent-line"></div>
+        <p style="color:var(--text2); margin-bottom:1.5rem;">AI Systems Consulting is a boutique firm founded by engineers for engineers. We specialize in practical, systems-oriented AI solutions that deliver measurable business value for software, DevOps, and operations teams.</p>
+        <p style="color:var(--text2);">We are not a generic AI vendor selling buzzwords. We are a technical team that understands production systems, technical debt, and what it actually takes to ship AI-powered tooling that sticks.</p>
+      </div>
+      <div>
+        <h2 class="section-title">Our Principles</h2>
+        <div class="accent-line"></div>
+        <div class="about-values">
+          <div class="value-item">
+            <div class="value-dot"></div>
+            <div><strong style="color:var(--white);">Engineer-Led</strong><p style="color:var(--text2); font-size:0.95rem; margin-top:0.2rem;">We are practitioners, not just consultants. We understand production systems and the realities of technical debt.</p></div>
+          </div>
+          <div class="value-item">
+            <div class="value-dot"></div>
+            <div><strong style="color:var(--white);">Outcome-Focused</strong><p style="color:var(--text2); font-size:0.95rem; margin-top:0.2rem;">Every engagement is measured by business impact, not technical novelty or project complexity.</p></div>
+          </div>
+          <div class="value-item">
+            <div class="value-dot"></div>
+            <div><strong style="color:var(--white);">Practical AI</strong><p style="color:var(--text2); font-size:0.95rem; margin-top:0.2rem;">We use proven AI/ML techniques, automation, and workflow design to solve problems that matter.</p></div>
+          </div>
+          <div class="value-item">
+            <div class="value-dot"></div>
+            <div><strong style="color:var(--white);">Transparent Delivery</strong><p style="color:var(--text2); font-size:0.95rem; margin-top:0.2rem;">We document, explain, and transfer knowledge so your team owns the outcome long after the engagement ends.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:4rem;">
+      <h2 class="section-title">Why Choose Us?</h2>
+      <div class="accent-line"></div>
+      <div class="cards-grid" style="margin-top:2rem;">
+        <div class="card">
+          <div class="card-icon">🔬</div>
+          <h3>Deep Technical Depth</h3>
+          <p style="color:var(--text2);">We bring hands-on experience in software engineering, DevOps, and AI/ML — not just slide decks.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📦</div>
+          <h3>Proven Delivery</h3>
+          <p style="color:var(--text2);">15+ AI automation projects with real business outcomes, from log analysis to document generation.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🛡️</div>
+          <h3>Built to Last</h3>
+          <p style="color:var(--text2);">We focus on maintainability, security, and long-term value — not just quick demos.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-section" style="margin-top:4rem;">
+      <h2>Let's work together</h2>
+      <p>Tell us about your biggest engineering workflow pain points and we'll show you where AI can help.</p>
+      <a href="contact.html" class="btn btn-primary">Start a Conversation →</a>
+    </div>
+  </div>
+
   <footer>
-    &copy; 2026 AI Systems Consulting &mdash; Practical AI for Engineering Teams
+    <div class="footer-inner">
+      <div class="footer-brand">⬡ <span>AI Systems</span> Consulting</div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-copy">&copy; 2026 AI Systems Consulting. Practical AI for Engineering Teams.</div>
   </footer>
+
   <script src="assets/js/main.js"></script>
 </body>
 </html>

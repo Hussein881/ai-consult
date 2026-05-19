@@ -3,68 +3,230 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project Portfolio | AI Systems Consulting</title>
+  <title>Projects | AI Systems Consulting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <header>
-    <h1>Project Portfolio</h1>
-    <p>Real-world AI automation projects for engineering and operations teams</p>
-  </header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
+
+  <nav class="navbar">
+    <a class="navbar-brand" href="index.html">&#x2BC1; <span>AI Systems</span> Consulting</a>
+    <ul class="navbar-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="contact.html" class="navbar-cta">Contact Us</a></li>
+    </ul>
   </nav>
-  <main>
-    <section>
-      <h2>Featured Projects</h2>
-      <div class="project-list">
-        <div class="project-card">
-          <h3><a href="projects/ai-log-analysis-root-cause-assistant.html">AI Log Analysis & Root Cause Assistant</a></h3>
-          <p>AI-powered assistant for log analysis, anomaly detection, and root cause identification. Reduces debugging time and accelerates incident response.</p>
-        </div>
-        <div class="project-card">
-          <h3><a href="projects/ai-test-failure-analysis-assistant.html">AI Test Failure Analysis Assistant</a></h3>
-          <p>Automates test result analysis, flaky test detection, and release risk assessment. Speeds up release cycles and improves software quality.</p>
-        </div>
-        <div class="project-card">
-          <h3><a href="projects/internal-engineering-knowledge-assistant.html">Internal Engineering Knowledge Assistant</a></h3>
-          <p>Retrieval-augmented AI assistant for internal documentation, onboarding, and knowledge sharing. Reduces onboarding time and preserves institutional knowledge.</p>
-        </div>
-        <div class="project-card">
-          <h3><a href="projects/ai-technical-documentation-generator.html">AI Technical Documentation Generator</a></h3>
-          <p>Generates and updates technical documentation from code, configs, and logs. Improves documentation quality and reduces support burden.</p>
-        </div>
+
+  <div class="page-hero">
+    <div class="hero-badge">Portfolio</div>
+    <h1>15 AI Automation Projects</h1>
+    <p>Real-world AI systems built for engineering, operations, support, and business teams.</p>
+  </div>
+
+  <!-- Featured Cards -->
+  <div class="section">
+    <div class="section-header">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="accent-line"></div>
+    </div>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-tag">Observability</div>
+        <h3><a href="projects/ai-log-analysis-root-cause-assistant.html">AI Log Analysis &amp; Root Cause Assistant</a></h3>
+        <p style="color:var(--text2);">Ingest logs, detect anomalies, identify root causes, and generate structured incident reports powered by AI.</p>
       </div>
-      <h2 style="margin-top:2.5rem;">All Projects</h2>
-      <ul>
-        <li><a href="projects/ai-log-analysis-root-cause-assistant.html">AI Log Analysis & Root Cause Assistant</a></li>
-        <li><a href="projects/ai-test-failure-analysis-assistant.html">AI Test Failure Analysis Assistant</a></li>
-        <li><a href="projects/internal-engineering-knowledge-assistant.html">Internal Engineering Knowledge Assistant</a></li>
-        <li><a href="projects/ai-technical-documentation-generator.html">AI Technical Documentation Generator</a></li>
-        <li><a href="projects/support-ticket-triage-automation.html">Support Ticket Triage Automation</a></li>
-        <li><a href="projects/ai-operations-reporting.html">AI Operations Reporting</a></li>
-        <li><a href="projects/custom-ai-workflow-automation.html">Custom AI Workflow Automation</a></li>
-        <li><a href="projects/ai-incident-response-automation.html">AI Incident Response Automation</a></li>
-        <li><a href="projects/ai-release-risk-assessment.html">AI Release Risk Assessment</a></li>
-        <li><a href="projects/ai-knowledge-base-summarizer.html">AI Knowledge Base Summarizer</a></li>
-        <li><a href="projects/ai-code-review-assistant.html">AI Code Review Assistant</a></li>
-        <li><a href="projects/ai-configuration-drift-detector.html">AI Configuration Drift Detector</a></li>
-        <li><a href="projects/ai-incident-postmortem-generator.html">AI Incident Postmortem Generator</a></li>
-        <li><a href="projects/ai-compliance-automation.html">AI Compliance Automation</a></li>
-        <li><a href="projects/ai-ops-dashboard.html">AI Ops Dashboard</a></li>
-      </ul>
-    </section>
-    <section class="cta">
-      <p>Want to discuss a similar project? <a href="contact.html">Contact us &rarr;</a></p>
-    </section>
-  </main>
+      <div class="card">
+        <div class="card-tag">Quality Engineering</div>
+        <h3><a href="projects/ai-test-failure-analysis-assistant.html">AI Test Failure Analysis Assistant</a></h3>
+        <p style="color:var(--text2);">Automatically triage test failures, detect flaky tests, and generate release readiness summaries from CI/CD output.</p>
+      </div>
+      <div class="card">
+        <div class="card-tag">Knowledge Management</div>
+        <h3><a href="projects/internal-engineering-knowledge-assistant.html">Internal Engineering Knowledge Assistant</a></h3>
+        <p style="color:var(--text2);">RAG-powered assistant for internal docs, onboarding, and knowledge sharing with instant, grounded answers.</p>
+      </div>
+      <div class="card">
+        <div class="card-tag">Developer Tooling</div>
+        <h3><a href="projects/ai-technical-documentation-generator.html">AI Technical Documentation Generator</a></h3>
+        <p style="color:var(--text2);">Generate READMEs, setup guides, and architecture summaries from code and configs using AI.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Full Project List -->
+  <div style="background:var(--bg2); border-top:1px solid var(--border); border-bottom:1px solid var(--border); padding:1rem 0;">
+    <div class="section">
+      <div class="section-header">
+        <h2 class="section-title">All Projects</h2>
+        <div class="accent-line"></div>
+      </div>
+      <div class="projects-list">
+
+        <a class="project-list-item" href="projects/ai-log-analysis-root-cause-assistant.html">
+          <span class="project-num">01</span>
+          <div>
+            <h3>AI Log Analysis &amp; Root Cause Assistant</h3>
+            <p>Log parsing, anomaly detection, root cause identification, structured incident reporting</p>
+          </div>
+          <span class="arrow-icon">&#x2192;</span>
+        </a>
+
+        <a class="project-list-item" href="projects/ai-test-failure-analysis-assistant.html">
+          <span class="project-num">02</span>
+          <div>
+            <h3>AI Test Failure Analysis Assistant</h3>
+            <p>Test triage, flaky test detection, release risk scoring, CI/CD integration</p>
+          </div>
+          <span class="arrow-icon">&#x2192;</span>
+        </a>
+
+        <a class="project-list-item" href="projects/internal-engineering-knowledge-assistant.html">
+          <span class="project-num">03</span>
+          <div>
+            <h3>Internal Engineering Knowledge Assistant</h3>
+            <p>RAG-powered Q&amp;A over internal docs, wikis, GitHub repos, and onboarding guides</p>
+          </div>
+          <span class="arrow-icon">&#x2192;</span>
+        </a>
+
+        <a class="project-list-item" href="projects/ai-technical-documentation-generator.html">
+          <span class="project-num">04</span>
+          <div>
+            <h3>AI Technical Documentation Generator</h3>
+            <p>Auto-generate READMEs, setup guides, architecture summaries from code and configs</p>
+          </div>
+          <span class="arrow-icon">&#x2192;</span>
+        </a>
+
+        <a class="project-list-item" href="projects/ai-support-escalation-ticket-triage.html">
+          <span class="project-num">05</span>
+          <div>
+            <h3>AI Support Escalation &amp; Ticket Triage Assistant</h3>
+            <p>Intelligent support ticket classification, routing, and escalation automation</p>
+          </div>
+          <span class="arrow-icon">&#x2192;</span>
+        </a>
+
+        <a class="project-list-item" href="projects/ai-customer-support-triage-assistant.html">
+          <span class="project-num">06</span>
+          <div>
+            <h3>AI Customer Support Triage Assistant</h3>
+            <p>Automated customer support triage, sentiment analysis, and priority routing</p>
+          </div>
+          <span class="arrow-icon">&#x2192;</span>
+        </a>
+
+        <a class="project-list-item" href="projects/internal-knowledge-assistant-company-documents.html">
+          <span class="project-num">07</span>
+          <div>
+            <h3>Internal Knowledge Assistant (Company Documents)</h3>
+            <p>Company-wide document assistant for HR, finance, legal, and policy documents</p>
+          </div>
+          <span class="arrow-icon">&#x2192;</span>
+        </a>
+
+        <a class="project-list-item" href="projects/ai-sales-proposal-quote-assistant.html">
+          <span class="project-num">08</span>
+          <div>
+            <h3>AI Sales Proposal &amp; Quote Assistant</h3>
+            <p>Automated generation of sales proposals, quotes, and RFP responses using AI</p>
+          </div>
+          <span class="arrow-icon">&#x2192;</span>
+        </a>
+
+        <a class="project-list-item" href="projects/ai-operations-reporting-assistant.html">
+          <span class="project-num">09</span>
+          <div>
+            <h3>AI Operations Reporting Assistant</h3>
+            <p>Automated operations dashboards, KPI summaries, and AI-generated status reports</p>
+          </div>
+          <span class="arrow-icon">&#x2192;</span>
+        </a>
+
+        <a class="project-list-item" href="projects/ai-invoice-document-processing-automation.html">
+          <span class="project-num">10</span>
+          <div>
+            <h3>AI Invoice &amp; Document Processing Automation</h3>
+            <p>Automated invoice extraction, classification, and processing using AI document understanding</p>
+          </div>
+          <span class="arrow-icon">&#x2192;</span>
+        </a>
+
+        <a class="project-list-item" href="projects/ai-employee-onboarding-assistant.html">
+          <span class="project-num">11</span>
+          <div>
+            <h3>AI Employee Onboarding Assistant</h3>
+            <p>Personalized onboarding assistant that guides new hires through policies, tools, and processes</p>
+          </div>
+          <span class="arrow-icon">&#x2192;</span>
+        </a>
+
+        <a class="project-list-item" href="projects/ai-compliance-quality-documentation-assistant.html">
+          <span class="project-num">12</span>
+          <div>
+            <h3>AI Compliance &amp; Quality Documentation Assistant</h3>
+            <p>Automated compliance documentation, audit trail generation, and quality reporting</p>
+          </div>
+          <span class="arrow-icon">&#x2192;</span>
+        </a>
+
+        <a class="project-list-item" href="projects/ai-field-operations-assistant.html">
+          <span class="project-num">13</span>
+          <div>
+            <h3>AI Field Operations Assistant</h3>
+            <p>AI assistant for field technicians — checklists, troubleshooting, and real-time guidance</p>
+          </div>
+          <span class="arrow-icon">&#x2192;</span>
+        </a>
+
+        <a class="project-list-item" href="projects/ai-meeting-decision-tracker.html">
+          <span class="project-num">14</span>
+          <div>
+            <h3>AI Meeting &amp; Decision Tracker</h3>
+            <p>Automated meeting summaries, action item extraction, and decision tracking from transcripts</p>
+          </div>
+          <span class="arrow-icon">&#x2192;</span>
+        </a>
+
+        <a class="project-list-item" href="projects/ai-business-process-automation-discovery-tool.html">
+          <span class="project-num">15</span>
+          <div>
+            <h3>AI Business Process Automation Discovery Tool</h3>
+            <p>AI-powered discovery and prioritization of business process automation opportunities</p>
+          </div>
+          <span class="arrow-icon">&#x2192;</span>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="cta-section">
+      <h2>Want a similar project built for your team?</h2>
+      <p>Every project in our portfolio has been designed to be adapted and deployed for real business needs.</p>
+      <a href="contact.html" class="btn btn-primary">Let's Talk &#x2192;</a>
+    </div>
+  </div>
+
   <footer>
-    &copy; 2026 AI Systems Consulting &mdash; Practical AI for Engineering Teams
+    <div class="footer-inner">
+      <div class="footer-brand">&#x2BC1; <span>AI Systems</span> Consulting</div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-copy">&copy; 2026 AI Systems Consulting. Practical AI for Engineering Teams.</div>
   </footer>
+
   <script src="assets/js/main.js"></script>
 </body>
 </html>
