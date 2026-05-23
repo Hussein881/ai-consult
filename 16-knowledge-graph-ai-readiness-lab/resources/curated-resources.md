@@ -1,5 +1,9 @@
 # Curated Resources
 
+## Start Here
+
+- AI terms and techniques glossary: [../../AI_TERMS_AND_TECHNIQUES.md](../../AI_TERMS_AND_TECHNIQUES.md)
+
 ## Core Standards and Concepts
 
 - RDF 1.1 Concepts and Abstract Syntax (W3C)

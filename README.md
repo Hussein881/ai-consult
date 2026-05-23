@@ -40,6 +40,33 @@ Each numbered project folder contains a full scenario with technical plan, busin
 3. Apply [README_TECHNICAL.md](README_TECHNICAL.md) to extract reusable utilities, scripts, libraries, and MCP tools while building.
 4. Apply [README_BUSINESS_STRATEGY.md](README_BUSINESS_STRATEGY.md) to run outreach, discovery, proposals, and contract conversion.
 
+## Recommended Agent Design Resources
+
+These are strong references for designing production-minded AI agents and workflows:
+
+- Anthropic: Building effective agents  
+	https://www.anthropic.com/engineering/building-effective-agents
+- OpenAI Agents guide  
+	https://platform.openai.com/docs/guides/agents
+- OpenAI Function calling guide  
+	https://platform.openai.com/docs/guides/function-calling
+- LangChain agents concepts  
+	https://python.langchain.com/docs/concepts/agents/
+- LangGraph docs  
+	https://langchain-ai.github.io/langgraph/
+- ReAct paper (PDF)  
+	https://arxiv.org/pdf/2210.03629.pdf
+- Toolformer paper (PDF)  
+	https://arxiv.org/pdf/2302.04761.pdf
+- Reflexion paper (PDF)  
+	https://arxiv.org/pdf/2303.11366.pdf
+- Lilian Weng: LLM-powered autonomous agents  
+	https://lilianweng.github.io/posts/2023-06-23-agent/
+
+Additional glossary:
+
+- [AI_TERMS_AND_TECHNIQUES.md](AI_TERMS_AND_TECHNIQUES.md)
+
 ## Outcome
 
 The intended outcome is a compounding system where each client project creates:
