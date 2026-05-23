@@ -2,7 +2,9 @@
 
 ## Overview
 
-An AI assistant that automatically processes field service notes, generates customer updates, flags repeat issues, and prepares work order documentation. The system improves field team efficiency and customer communication.
+An AI assistant that automatically processes field service notes, generates customer updates, flags repeat issues, and prepares work order documentation. The core deliverables are structured work summaries, parts and labor extraction, customer-update drafts, follow-up recommendations, and work-order documentation because those are the outputs field organizations need after every visit.
+
+This is directly relevant to companies such as Siemens, Honeywell, GE, Johnson Controls, ServiceNow service partners, and industrial service businesses with distributed technician teams. In a consulting portfolio, this project shows that the firm can apply AI beyond the desktop and into operational workflows where technicians, dispatch, and customer communication all intersect.
 
 ## Business Problem
 
@@ -41,6 +43,22 @@ Build an assistant that:
 **Out of Scope:**
 - Real-time mobile integration
 - GPS tracking
+
+## Client-Facing Deliverables
+
+The final product should be presented as a field-service workflow accelerator:
+
+- Technician note intake for text, voice, and structured service details
+- Automated work summary and parts/labor extraction workflow
+- Customer-facing update draft after each service event
+- Follow-up and next-visit recommendation engine
+- Internal work-order and reporting output for dispatch, billing, and operations managers
+
+These deliverables matter because service organizations do not buy AI just to summarize notes. They want less administrative overhead for technicians, better customer communication, and cleaner records for dispatch, billing, and maintenance follow-up.
+
+## Portfolio Value
+
+This project makes the consulting firm's portfolio broader and more commercially credible by showing AI applied to field operations, not only knowledge work. A service business can immediately see how this would reduce admin time and improve customer experience in its own environment.
 
 ## MVP Features
 
@@ -255,7 +273,7 @@ Dispatch/Follow-up
 
 ## Consulting Angle
 
-Field operations automation for service companies.
+Field operations automation for service companies, industrial maintenance firms, utilities, and equipment providers that want technicians spending more time in the field and less time on paperwork.
 
 **Implementation: $30-50K**
 **Annual SaaS: $20-30K**
@@ -272,3 +290,58 @@ Field operations automation for service companies.
 
 - **Key Challenge:** User adoption in field
 - **Success Factor:** Mobile usability
+
+## Industry-Grade Delivery Framework
+
+### What Success Looks Like (Client and User)
+- Business problem is measurable before build (baseline) and improved after launch (target outcomes).
+- Target users can complete key tasks faster with fewer handoffs.
+- AI output is actionable, cited/traceable where relevant, and easy to verify.
+- User feedback after pilot should indicate: useful insights, time saved, and seamless integration into existing workflow.
+
+### How We Build to Industry Standard
+- Discovery and workflow mapping with real users before implementation.
+- Production-grade architecture (security, observability, error handling, rollback path).
+- Human-in-the-loop controls for high-impact decisions.
+- Evaluation harness with quality metrics (accuracy, precision/recall where applicable, latency, and adoption).
+- Integration-first approach with existing systems (ticketing, CI/CD, CRM, ERP, docs, or chat tools as relevant).
+
+### Paid Engagement Structure (Time, Cost, and Accountability)
+- Phase 1: Discovery and solution design (1-2 weeks).
+- Phase 2: MVP build and pilot (2-6 weeks, depending on system complexity).
+- Phase 3: Production hardening and integrations (2-6 weeks).
+- Phase 4: Enablement, training, and handover (1-2 weeks).
+- Commercial model should include milestone-based delivery, measurable acceptance criteria, and optional support retainer.
+
+### Risks and Mitigation
+- Risk: LLM lacks company-specific context.
+  Mitigation: Retrieval grounding, curated internal data connectors, and source-citation requirements.
+- Risk: Hallucinated or low-confidence outputs reduce trust.
+  Mitigation: Confidence scoring, fallback rules, human review gates, and evaluation benchmarks before release.
+- Risk: Integration friction with legacy systems.
+  Mitigation: Early API/integration discovery, staged rollout, and adapter-based architecture.
+- Risk: Low user adoption despite technical success.
+  Mitigation: UX co-design with end users, in-workflow delivery, onboarding, and feedback loops.
+- Risk: Data privacy/compliance concerns.
+  Mitigation: Data minimization, access controls, audit logs, and deployment options aligned to client policy.
+
+### Definition of Final Product
+- A deployable solution integrated into real operating workflows.
+- Clear before/after KPI reporting on business impact.
+- Runbooks, admin documentation, and user training materials delivered.
+- Handover plan so client teams can operate confidently without vendor lock-in.
+
+## Regional Potential Clients (NY/NJ/Philadelphia)
+
+Positioning note: Numbers below are directional estimates for outreach conversations. Validate with discovery.
+
+1. Verizon (Basking Ridge, NJ): Field service and network operations need better note-to-work-order automation. Large firms may charge $260K-$850K; you can position $120K-$280K and target $450K-$1.8M annual savings.
+2. PSEG (Newark, NJ): Utility field teams can reduce admin time with automated service summaries. Big consultancies might price $240K-$800K; your offer at $110K-$260K can save $350K-$1.4M.
+3. Public Service Enterprise Group (NJ): Repeat maintenance workflows can benefit from parts/time extraction and follow-up planning. Large-firm cost often $240K-$800K; your build at $110K-$260K can save $350K-$1.4M.
+4. Comcast (Philadelphia, PA): Technician workflows and customer updates can be streamlined for service ops. Big firms may charge $280K-$900K; your pricing at $120K-$300K can save $500K-$2M.
+5. PECO (Philadelphia, PA): Field maintenance notes and dispatch handoffs can be standardized with AI summaries. Large-firm engagement could be $240K-$800K; your implementation at $110K-$260K can save $350K-$1.4M.
+6. SEPTA (Philadelphia, PA): Maintenance/service documentation can reduce delays and improve communication. Big-firm programs may be $220K-$700K; your scope at $95K-$230K can save $250K-$1M.
+7. Johnson Controls (regional operations): Service teams can improve customer update quality and follow-up capture. Large-firm pricing often $240K-$800K; your delivery at $110K-$260K can save $350K-$1.4M.
+8. Honeywell Building Solutions (regional): Field technicians can reduce paperwork and improve first-time resolution support. Big consulting may cost $240K-$800K; your offer at $110K-$260K can save $350K-$1.4M.
+9. Aramark Facilities (Philadelphia, PA): Facility field operations can automate note processing and work order summaries. Big firms may quote $220K-$700K; your implementation at $95K-$230K can save $250K-$1M.
+10. ABM Industries (NY/NJ/PA operations): Service documentation automation can improve technician utilization. Large-firm projects might be $220K-$700K; your pricing at $95K-$230K can save $250K-$1M.
