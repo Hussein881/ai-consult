@@ -11,6 +11,7 @@ To support both goals, documentation is now split into two tracks:
 
 - Technical strategy: [README_TECHNICAL.md](README_TECHNICAL.md)
 - Business strategy: [README_BUSINESS_STRATEGY.md](README_BUSINESS_STRATEGY.md)
+- Project-by-project learning guide: [PROJECT_LEARNING_TOPICS_BY_PROJECT.md](PROJECT_LEARNING_TOPICS_BY_PROJECT.md)
 
 ## Portfolio Projects
 

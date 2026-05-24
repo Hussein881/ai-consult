@@ -1,84 +1,71 @@
-# Knowledge Graph + AI Readiness Lab
+# Enterprise Knowledge Graph and AI Engineering Lab
 
-## Purpose
+## Goal
 
-This project is a personal training and portfolio lab to build practical experience in:
+This lab is redesigned as a portfolio-grade training program to help you learn and implement the exact capabilities needed for enterprise graph and AI delivery:
 
-- knowledge graph design
-- ontology and entity modeling
-- entity resolution and master data concepts
-- data quality controls for graph systems
-- AI use cases that depend on trusted enterprise knowledge
+- Build and expand an enterprise knowledge graph
+- Design and evolve ontologies and entity models
+- Integrate structured and unstructured datasets
+- Implement data validation and quality controls with SHACL
+- Drive entity resolution and master data management
+- Optimize SPARQL queries and graph performance
+- Develop AI agents and LLM pipelines for knowledge extraction
 
-It is designed to mirror the demand signal from technical recruiting and financial-services-adjacent teams that need reliable AI deployments.
+## How This Lab Is Structured
 
-## Target Outcome
+Project 16 now runs as seven subprojects. Each subproject has:
 
-By the end of this lab, you should be able to:
+- Learning focus (what to learn first)
+- Implementation scope (what to build)
+- Exit criteria (what proves readiness)
+- Starter resources
 
-1. Explain where AI projects fail without a knowledge foundation.
-2. Design a basic ontology and entity model for a business domain.
-3. Build and query a small knowledge graph proof of concept.
-4. Define data quality and validation checks.
-5. Propose a credible 2-week discovery sprint and 4-8 week pilot offer.
+Start here:
 
-## 4-Week Plan
+- Master sequence and timeline: [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md)
+- Subproject map: [subprojects](subprojects)
 
-### Week 1: Foundations
+## Subprojects
 
-- Study core concepts: RDF, triples, ontology basics, SPARQL, SHACL.
-- Build a domain glossary and entity inventory.
-- Complete Exercise 01.
+1. [01-enterprise-graph-foundation](subprojects/01-enterprise-graph-foundation/README.md)
+2. [02-ontology-and-entity-modeling](subprojects/02-ontology-and-entity-modeling/README.md)
+3. [03-structured-unstructured-integration](subprojects/03-structured-unstructured-integration/README.md)
+4. [04-shacl-data-quality-controls](subprojects/04-shacl-data-quality-controls/README.md)
+5. [05-entity-resolution-and-mdm](subprojects/05-entity-resolution-and-mdm/README.md)
+6. [06-sparql-and-graph-performance](subprojects/06-sparql-and-graph-performance/README.md)
+7. [07-agents-and-llm-extraction-pipelines](subprojects/07-agents-and-llm-extraction-pipelines/README.md)
 
-### Week 2: Modeling and Data Integration
+## Recommended Sequence
 
-- Draft ontology and relationships for one target domain.
-- Integrate a small mixed dataset (structured + unstructured notes).
-- Complete Exercise 02.
+Follow this order to reduce risk and avoid fragile builds:
 
-### Week 3: Querying and AI Workflow
+1. Graph foundation
+2. Ontology and entity modeling
+3. Data integration
+4. SHACL validation and quality controls
+5. Entity resolution and MDM
+6. SPARQL and performance tuning
+7. Agentic and LLM extraction workflows
 
-- Write practical SPARQL query patterns for business questions.
-- Design an AI workflow that uses graph-backed retrieval.
-- Complete Exercise 03.
+## Expected Outcome After Completion
 
-### Week 4: Validation and Commercialization
+By finishing all seven subprojects, you should be able to:
 
-- Add quality rules and validation checks.
-- Draft client-facing discovery report and pilot outline.
-- Complete Exercise 04.
+- lead a knowledge graph discovery workshop
+- design a production-credible ontology and data model
+- implement ingestion and validation pipelines
+- ship query patterns with measurable performance targets
+- add AI extraction and agent workflows with guardrails
+- package this work into a paid discovery and pilot proposal
 
-## Project Structure
+## Existing Materials
 
-- resources: Learning material and references.
-- exercises: Hands-on tasks with acceptance criteria.
-- notes: Reusable notes templates for learning and client discovery.
+Existing files still provide useful support:
 
-## Deliverables
+- [resources](resources)
+- [notes](notes)
+- [exercises](exercises)
+- [LEARNING_ROADMAP_FOR_AI_CONSULTING.md](LEARNING_ROADMAP_FOR_AI_CONSULTING.md)
 
-1. Ontology draft and entity map.
-2. Example query set mapped to business questions.
-3. Data quality and validation checklist.
-4. Pilot scope template with success metrics.
-5. Short case-style write-up for your portfolio.
-
-## Success Criteria
-
-- You can run a structured discovery conversation around knowledge readiness.
-- You can explain measurable value in business language.
-- You can map technical graph work to pilot outcomes.
-- You have reusable assets for outreach and proposal development.
-
-## Suggested Weekly Cadence
-
-- Monday: Study and concept mapping.
-- Tuesday: Build and model.
-- Wednesday: Query and test.
-- Thursday: Document and package learnings.
-- Friday: Review and prepare talking points for network conversations.
-
-## Commercial Framing Practice
-
-Use this sentence during networking:
-
-I help teams identify one workflow where knowledge fragmentation blocks reliable AI outcomes, then design a low-risk pilot to improve data trust, retrieval quality, and decision speed.
+Use them as supporting assets while executing the new subproject path.
